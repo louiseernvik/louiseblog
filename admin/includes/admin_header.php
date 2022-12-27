@@ -22,6 +22,10 @@
 
     <title>CMS - Blog</title>
 
+    <!-- Summernote include js/css -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet"> -->
+    <link href="css/summernote.css" rel="stylesheet">
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
