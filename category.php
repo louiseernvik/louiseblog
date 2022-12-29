@@ -29,15 +29,12 @@
                         $post_content = substr($row['post_content'],0,200);
                         ?>
 
-                        <h1 class="page-header">
-                        Page Heading
-                        <small>Secondary Text</small>
-                        </h1>
+                        
 
                         <!-- First Blog Post -->
-                        <h2>
+                        <h1 class="page-header">
                             <a href="post.php?p_id=<?php echo $post_id; ?>"><?php echo $post_title ?></a>
-                        </h2>
+                        </h1>
                         <p class="lead">
                             by <a href="index.php"><?php echo $post_author ?></a>
                         </p>
