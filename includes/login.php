@@ -26,8 +26,6 @@
         $db_user_role = $row['user_role'];
     }
 
-    // $password = crypt($password, $db_user_password);
-
     if($username === $db_username && $password === $db_user_password && $db_user_role == "admin"){
         $_SESSION['username'] = $db_username;
         $_SESSION['firstname'] = $db_user_firstname;
@@ -44,13 +42,14 @@
 
         header("Location: ../admin/sub-profile.php");
     } else{
-
         $_SESSION['username']   = null;
         $_SESSION['firstname']  = null;
         $_SESSION['lastname']   = null;
         $_SESSION['user_role']  = null;
 
-        header("Location: ../index.php");
+        // header("Location: ../index.php");
+
+        echo "<script>alert('Invalid username/password, Please try again.'); window.location.href= '../index.php';</script>";
     }
 
 ?>

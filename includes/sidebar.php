@@ -14,7 +14,6 @@
                 </span>
             </div>
         </form> <!-- /search form -->
-        <!-- /.input-group -->
     </div>
 
 
@@ -32,8 +31,8 @@
                     <button class="btn btn-primary" name="login" type="submit">Submit</button>
                 </span>
             </div>
+
         </form> <!-- /search form -->
-        <!-- /.input-group -->
     </div>
 
 
