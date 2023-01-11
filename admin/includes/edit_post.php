@@ -17,8 +17,7 @@
         $post_content       = $row['post_content'];
         $post_tags          = $row['post_tags'];
         $post_comment_count = $row['post_comment_count'];
-        $post_date          = $row['post_date'];
-        
+        $post_date          = $row['post_date']; 
     }
 
     if(isset($_POST['update_post'])) {
@@ -92,29 +91,7 @@
         </select>
     </div>
 
-    <!-- <div class="form-group">
-        <label for="users">Users</label>
-        
-        <?php
-            // $users_query = "SELECT * FROM users";
-            // $select_users = mysqli_query($connection,$users_query);
-            
-            // confirmQuery($select_users);
-
-
-            // while($row = mysqli_fetch_assoc($select_users)) {
-            //     $user_id = $row['user_id'];
-            //     $username = $row['username'];
-                            
-            //     echo "<option value='{$username}'>{$username}</option>"; 
-            // }
-        ?>
-
-        </select>
-    </div> -->
-
-
-      <div class="form-group">
+    <div class="form-group">
         <label for="title">Post Author</label>
         <input value="<?php echo $post_author; ?>" type="text" class="form-control" name="post_author">
     </div>
@@ -147,7 +124,7 @@
     
     <div class="form-group">
         <label for="post_content">Post Content</label>
-        <textarea  class="form-control "name="post_content" id="" cols="30" rows="10"><?php echo $post_content; ?></textarea>
+        <textarea  class="form-control "name="post_content" id="summernote" cols="30" rows="10"><?php echo $post_content; ?></textarea>
     </div>
     
     <div class="form-group">

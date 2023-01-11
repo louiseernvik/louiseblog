@@ -1,8 +1,9 @@
 <?php include('includes/db.php'); ?>
 <?php include('includes/header.php'); ?>
+<?php session_start(); ?>
 
     <!-- Navigation -->
-    <?php include('includes/navigation.php'); ?>
+    <?php include('includes/sub-navigation.php'); ?>
 
     <!-- Page Content -->
     <div class="container">
@@ -69,17 +70,33 @@
                         }
                     }
                 ?>
+            
                 <!-- Comments Form -->
+                <?php 
+                    if(isset($_SESSION['username'])){
+                        $username = $_SESSION['username'];
+
+                        $query = "SELECT * FROM users WHERE username = '{$username}' ";
+                        $select_user_query = mysqli_query($connection, $query);
+
+                        while($row = mysqli_fetch_array($select_user_query)){
+                            $user_id = $row['user_id'];
+                            $username = $row['username'];
+                            $user_email = $row['user_email'];
+                        }
+                    }
+                ?>
+
                 <div class="well">
                     <h4>Leave a Comment:</h4>
                     <form action="" method="post" role="form">
                         <div class="form-group">
                             <label for="author">Author</label>
-                            <input type="text" class="form-control" name="comment_author">
+                            <input type="text" class="form-control" value="<?php echo $username ?>" name="username">
                         </div>
                         <div class="form-group">
                         <label for="email">Email</label>
-                            <input type="email" class="form-control" name="comment_email">
+                            <input type="email" class="form-control" value="<?php echo $user_email ?>" name="user_email">
                         </div>
                         <div class="form-group">
                         <label for="comment">Your Comment</label>
@@ -126,10 +143,10 @@
             </div>
 
             <!-- Blog Sidebar Widgets Column -->
-            <?php include('includes/sidebar.php');?>
+            <?php include('includes/sub-sidebar.php');?>
         </div>
 
         <hr>
         
-<!-- footer -->
+        <!-- footer -->
 <?php include('includes/footer.php');?>

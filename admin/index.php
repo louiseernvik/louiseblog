@@ -135,7 +135,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- /.row -->
                 
                 <!-- Dynamic data in Chart -->
                 <?php 
@@ -193,10 +192,7 @@
                 </div>
 
             </div>
-            <!-- /.container-fluid -->
         </div>
-        <!-- /#page-wrapper -->
-
 
         <!-- footer -->
         <?php include('includes/admin_footer.php') ?>

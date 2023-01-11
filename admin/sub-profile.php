@@ -60,7 +60,7 @@
 
         confirmQuery($edit_user_query);
 
-        echo "User has been updated";
+        echo "User has been updated"; 
     }
 ?>
 
@@ -68,7 +68,7 @@
 <div id="wrapper">
 
     <!-- Navigation -->
-    <?php include('includes/admin_navigation.php') ?>
+    <?php include('includes/sub_navigation.php') ?>
 
 
     <div id="page-wrapper">
@@ -96,16 +96,9 @@
                         <div class="form-group">
                         <select name="user_role" id="" >
                                 <option value="subscriber"><?php echo $user_role;?></option>
-                                <?php
-                                    if($user_role == 'admin'){
-                                        echo "<option value='subscriber'>Subscriber</option>";
-                                    } else{
-                                        echo "<option value='admin'>Admin</option>";
-                                    }
-                                ?>
                         </select>
                         </div>
-
+                        
                         <div class="form-group">
                             <label for="post_tags">Username</label>
                             <input type="text" value="<?php echo $username;?>" class="form-control" name="username">
@@ -125,6 +118,8 @@
                             <input class="btn btn-primary" type="submit" name="edit_user" value="Update Profile">
                         </div>
                     </form>
+
+
 
                 </div>
             </div>

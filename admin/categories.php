@@ -5,7 +5,6 @@
     <!-- Navigation -->
     <?php include('includes/admin_navigation.php') ?>
 
-
     <div id="page-wrapper">
         <div class="container-fluid">
 
@@ -14,7 +13,7 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">
                         Welcome to admin
-                        <small>Author</small>
+                        <small><?php echo $_SESSION['username']; ?></small>
                     </h1>
                     
                     <div class="col-xs-6">
@@ -32,13 +31,11 @@
                         </form> 
 
                         <?php 
-                        //include UPDATE categories and INCLUDE
+                            if(isset($_GET['edit'])){
+                                $cat_id = $_GET['edit'];
 
-                        if(isset($_GET['edit'])){
-                            $cat_id = $_GET['edit'];
-
-                            include "includes/update_categories.php";
-                        }
+                                include "includes/update_categories.php";
+                            }
                         ?>  
 
                     </div>
@@ -53,12 +50,10 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    //Find/READ ALL categories query
                                     findAllCatecories()
                                 ?>
    
                                 <?php 
-                                    //DELETE category
                                     deleteCategory();
                                 ?>
                             </tbody>
@@ -67,13 +62,8 @@
                     
                 </div>
             </div>
-            <!-- /.row -->
-
         </div>
-        <!-- /.container-fluid -->
     </div>
-    <!-- /#page-wrapper -->
-
 
     <!-- footer -->
     <?php include('includes/admin_footer.php') ?>

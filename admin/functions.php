@@ -12,7 +12,6 @@ function insert_categories(){
     global $connection;
 
     if(isset($_POST['submit'])){
-        // echo "The form is working!"."<br>";
 
         $cat_title = $_POST['cat_title'];
         
@@ -44,7 +43,7 @@ function findAllCatecories(){
         echo "<tr>";
         echo "<td>{$cat_id}</td>";
         echo "<td>{$cat_title}</td>";
-        echo "<td><a href='categories.php?delete={$cat_id}'>Delete</a></td>";
+        echo "<td><a onClick=\"javascript: return confirm('Are you sure you want to delete?');\" href='categories.php?delete={$cat_id}'>Delete</a></td>";
         echo "<td><a href='categories.php?edit={$cat_id}'>Edit</a></td>";
         echo "</tr>";
     }

@@ -3,16 +3,9 @@
         $user_firstname   = $_POST['user_firstname'];
         $user_lastname    = $_POST['user_lastname'];
         $user_role        = $_POST['user_role'];
-
-        // $post_image         = $_FILES['image']['name'];
-        // $post_image_temp    = $_FILES['image']['tmp_name'];
-
         $username         = $_POST['username'];
         $user_email       = $_POST['user_email'];
         $user_password    = $_POST['user_password'];
-        // $post_date     = date('d-m-y');
-
-        // move_uploaded_file($post_image_temp, "../images/$post_image");
 
         $query = "INSERT INTO users(user_firstname, user_lastname, user_role, username, user_email, user_password) ";
         $query .= "VALUES('{$user_firstname}', '{$user_lastname}', '{$user_role}', '{$username}', '{$user_email}',  '{$user_password}')";
@@ -40,14 +33,9 @@
        <select name="user_role" id="">
             <option value="subscriber">Select Options</option>
             <option value="admin">Admin</option>
-            <option value="subbscriber">Subbscriber</option>
+            <option value="subscriber">Subscriber</option>
        </select>
     </div>
-      
-    <!-- <div class="form-group">
-        <label for="post_image">Image</label>
-        <input type="file"  name="image">
-    </div> -->
 
     <div class="form-group">
         <label for="post_tags">Username</label>

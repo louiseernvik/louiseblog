@@ -32,18 +32,6 @@
                     echo "<td>$comment_id</td>";
                     echo "<td>$comment_author</td>";
                     echo "<td>$comment_content</td>";
-
-
-                    // $query = "SELECT * FROM categories WHERE cat_id = {$post_category_id}";
-                    // $select_categories_id = mysqli_query($connection, $query);  
-    
-                    // while($row = mysqli_fetch_assoc($select_categories_id)){
-                    //     $cat_id = $row['cat_id'];
-                    //     $cat_title = $row['cat_title']; 
-                
-                    //     echo "<td>{$cat_title}</td>";
-                    // }
-
                     echo "<td>$comment_email</td>";
                     echo "<td>$comment_status</td>";
                     
@@ -59,7 +47,7 @@
                     echo "<td>$comment_date</td>";
                     echo "<td><a href='comments.php?approve={$comment_id}'>Approve</a></td>";
                     echo "<td><a href='comments.php?unapprove={$comment_id}'>Unapprove</a></td>";
-                    echo "<td><a href='comments.php?delete={$comment_id}'>Delete</a></td>";
+                    echo "<td><a onClick=\"javascript: return confirm('Are you sure you want to delete?');\" href='comments.php?delete={$comment_id}'>Delete</a></td>";
                     
                 echo "</tr>";
             }
