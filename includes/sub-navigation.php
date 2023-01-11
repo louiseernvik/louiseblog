@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a id="brandId" class="navbar-brand" href="./index.php">LouiseBlog</a>
+            <a id="brandId" class="navbar-brand" href="./sub-index.php">LouiseBlog</a>
         </div>tstra
 
 
@@ -31,7 +31,7 @@
 
                 
                 <li>
-                    <a href="admin">Admin</a>
+                    <a href="admin/sub-index.php">Admin</a>
                 </li>
                 <li>
                     <a href="registration.php">Registration</a>

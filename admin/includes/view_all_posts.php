@@ -4,7 +4,7 @@
         foreach($_POST['checkBoxArray'] as $postValueId ){
         
             $bulk_options = $_POST['bulk_options'];
-            
+    
             switch($bulk_options) {
             case 'published':
                 $query = "UPDATE posts SET post_status = '{$bulk_options}' WHERE post_id = {$postValueId}  ";
@@ -41,8 +41,9 @@
         </div>
 
         <div class="col-xs-4">
-            <input type="submit" name="submit" class="btn btn-success" value="Apply">
+            <?php echo "<input onClick=\"javascript: return confirm('Are you sure you want to commit changes?');\" type='submit' name='submit' class='btn btn-success' value='Apply'>"; ?>
             <a class="btn btn-primary" href="posts.php?source=add_post">Add New</a>
+            <br><br>
         </div>
 
         <thead>

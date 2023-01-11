@@ -74,7 +74,7 @@
 <div id="wrapper">
 
     <!-- Navigation -->
-    <?php include('includes/admin_navigation.php') ?>
+    <?php include('includes/sub_navigation.php') ?>
 
 
     <div id="page-wrapper">
@@ -104,13 +104,6 @@
                         <div class="form-group">
                         <select name="user_role" id="" >
                                 <option value="subscriber"><?php echo $user_role;?></option>
-                                <?php
-                                    if($user_role == 'admin'){
-                                        echo "<option value='subscriber'>Subscriber</option>";
-                                    } else{
-                                        echo "<option value='admin'>Admin</option>";
-                                    }
-                                ?>
                         </select>
                         </div>
                         

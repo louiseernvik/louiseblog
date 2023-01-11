@@ -66,7 +66,7 @@
             <option value="<?php echo $user_role;?>"><?php echo $user_role;?></option>
             <?php
                 if($user_role == 'admin'){
-                    echo "<option value='subbscriber'>Subbscriber</option>";
+                    echo "<option value='subscriber'>Subscriber</option>";
                 } else{
                     echo "<option value='admin'>Admin</option>";
                 }

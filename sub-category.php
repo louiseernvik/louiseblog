@@ -2,7 +2,7 @@
 <?php include('includes/header.php'); ?>
 
     <!-- Navigation -->
-    <?php include('includes/navigation.php'); ?>
+    <?php include('includes/sub-navigation.php'); ?>
 
     <!-- Page Content -->
     <div class="container">
@@ -33,7 +33,7 @@
 
                         <!-- First Blog Post -->
                         <h1 class="page-header">
-                            <a href="post.php?p_id=<?php echo $post_id; ?>"><?php echo $post_title ?></a>
+                            <a href="sub-post.php?p_id=<?php echo $post_id; ?>"><?php echo $post_title ?></a>
                         </h1>
                         <p class="lead">
                             by <?php echo $post_author ?>
@@ -43,7 +43,7 @@
                         <img class="img-responsive" src="images/<?php echo $post_image ?>" alt="">
                         <hr>
                         <p><?php echo $post_content ?></p>
-                        <a class="btn btn-primary" href="post.php?p_id=<?php echo $post_id; ?>">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                        <a class="btn btn-primary" href="sub-post.php?p_id=<?php echo $post_id; ?>">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
                         <hr>
                     <?php } ?>
 
@@ -51,7 +51,7 @@
             </div>
 
             <!-- Blog Sidebar Widgets Column -->
-            <?php include('includes/sidebar.php');?>
+            <?php include('includes/sub-sidebar.php');?>
         </div>
         <!-- /.row -->
 

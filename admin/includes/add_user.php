@@ -40,7 +40,7 @@
        <select name="user_role" id="">
             <option value="subscriber">Select Options</option>
             <option value="admin">Admin</option>
-            <option value="subbscriber">Subbscriber</option>
+            <option value="subscriber">Subscriber</option>
        </select>
     </div>
       
