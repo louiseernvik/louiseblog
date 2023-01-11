@@ -31,7 +31,7 @@
 
                 
                 <li>
-                    <a href="admin/sub-index.php">Admin</a>
+                    <a href="admin/sub-profile.php">Admin</a>
                 </li>
                 <li>
                     <a href="registration.php">Registration</a>

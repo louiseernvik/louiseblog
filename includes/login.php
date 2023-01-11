@@ -42,7 +42,7 @@
         $_SESSION['lastname'] = $db_user_lastname;
         $_SESSION['user_role'] = $db_user_role;
 
-        header("Location: ../admin/sub-index.php");
+        header("Location: ../admin/sub-profile.php");
     } else{
 
         $_SESSION['username']   = null;
