@@ -29,8 +29,6 @@
                         $post_content = substr($row['post_content'],0,200);
                         ?>
 
-                        
-
                         <!-- First Blog Post -->
                         <h1 class="page-header">
                             <a href="post.php?p_id=<?php echo $post_id; ?>"><?php echo $post_title ?></a>
@@ -53,9 +51,8 @@
             <!-- Blog Sidebar Widgets Column -->
             <?php include('includes/sidebar.php');?>
         </div>
-        <!-- /.row -->
 
         <hr>
         
-        <!-- footer -->
+<!-- footer -->
 <?php include('includes/footer.php');?>

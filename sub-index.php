@@ -60,7 +60,6 @@
             <!-- Blog Sidebar Widgets Column -->
             <?php include('includes/sub-sidebar.php');?>
         </div>
-        <!-- /.row -->
 
         <hr>
         

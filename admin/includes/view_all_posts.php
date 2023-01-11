@@ -28,7 +28,6 @@
     }
 ?>
 
-
 <form action="" method="post">
     <table class="table table-bordered table-hover">
         <div id="bulkOptionsContainer" class="col-xs-4">
@@ -88,8 +87,6 @@
                         echo "<td>$post_author</td>";
                         echo "<td>$post_title</td>";
 
-
-
                         $query = "SELECT * FROM categories WHERE cat_id = {$post_category_id}";
                         $select_categories_id = mysqli_query($connection, $query);  
         
@@ -99,7 +96,6 @@
                     
                             echo "<td>{$cat_title}</td>";
                         }
-
 
                         echo "<td>$post_status</td>";
                         echo "<td><img width='100px' src='../images/$post_image' alt='image'></td>";

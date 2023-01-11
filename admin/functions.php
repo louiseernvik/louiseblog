@@ -12,7 +12,6 @@ function insert_categories(){
     global $connection;
 
     if(isset($_POST['submit'])){
-        // echo "The form is working!"."<br>";
 
         $cat_title = $_POST['cat_title'];
         

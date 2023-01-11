@@ -5,7 +5,6 @@
     <!-- Navigation -->
     <?php include('includes/admin_navigation.php') ?>
 
-
     <div id="page-wrapper">
         <div class="container-fluid">
 
@@ -33,13 +32,8 @@
                             include "includes/edit_post.php";
                             break;
                             
-                            // case '200';
-                            // echo "NICE 200";
-                            // break;
-
                             default:
                             include "includes/view_all_posts.php";
-
                             break;
                        }
 
@@ -47,13 +41,8 @@
 
                 </div>
             </div>
-            <!-- /.row -->
-
         </div>
-        <!-- /.container-fluid -->
     </div>
-    <!-- /#page-wrapper -->
-
 
     <!-- footer -->
     <?php include('includes/admin_footer.php') ?>

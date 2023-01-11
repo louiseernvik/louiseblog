@@ -23,9 +23,6 @@
                 die("Query Faiiled" . mysqli_error($connection));
             }
 
-            // $row = mysqli_fetch_array($select_randsalt_query);
-            // $salt = $row['randSalt'];
-
             $query = "INSERT INTO users (username, user_firstname, user_lastname, user_email, user_password, user_role) ";
             $query .= "VALUES ('{$username}', '{$firstname}', '{$lastname}', '{$email}', '{$password}', 'subscriber')";
             $register_user_query = mysqli_query($connection, $query);
@@ -86,9 +83,9 @@
                     </form>
                 
                 </div>
-            </div> <!-- /.col-xs-12 -->
-        </div> <!-- /.row -->
-    </div> <!-- /.container -->
+            </div> 
+        </div> 
+    </div> 
 </section>
 
 <hr>

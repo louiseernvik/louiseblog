@@ -13,7 +13,7 @@
                 </button>
                 </span>
             </div>
-        </form> <!-- /search form -->
+        </form>
     </div>
 
 
@@ -32,7 +32,7 @@
                 </span>
             </div>
 
-        </form> <!-- /search form -->
+        </form>
     </div>
 
 
@@ -63,7 +63,6 @@
                 </ul>
             </div>
         </div>
-        <!-- /.row -->
     </div>
 
 </div>
