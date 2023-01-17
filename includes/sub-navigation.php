@@ -19,9 +19,6 @@
                 <li>
                     <a href="admin/sub-profile.php">Admin</a>
                 </li>
-                <li>
-                    <a href="registration.php">Registration</a>
-                </li>
             </ul>
         </div>
     </div>

@@ -3,7 +3,7 @@
 <div id="wrapper">
 
     <!-- Navigation -->
-    <?php include('includes/admin_navigation.php') ?>
+    <?php include('includes/sub_navigation.php') ?>
 
     <div id="page-wrapper">
         <div class="container-fluid">
@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">
-                        Admin posts
+                        Add a post
                         <small><?php echo $_SESSION['username']; ?></small>
                     </h1>
                     
@@ -24,16 +24,8 @@
                        }
 
                        switch($source){
-                            case 'add_post';
-                            include "includes/add_post.php";
-                            break;
-
-                            case 'edit_post';
-                            include "includes/edit_post.php";
-                            break;
-                            
                             default:
-                            include "includes/view_all_posts.php";
+                            include "includes/sub_add_post.php";
                             break;
                        }
 

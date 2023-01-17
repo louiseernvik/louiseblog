@@ -40,6 +40,9 @@
             <li>
                 <a href="sub-profile.php"><i class="fa fa-fw fa-dashboard"></i> Profile</a>
             </li>
+            <li>
+                <a href="sub_posts.php?source=sub_add_post">Add Posts</a>
+            </li>
         </ul>
     </div>
 </nav>
